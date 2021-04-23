@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Exercicios_Inlock_webApi</name>
+    </assembly>
+    <members>
+        <member name="M:Exercicios_Inlock_webApi.Controllers.estudiosController.ListarEventos">
+            <summary>
+            Lista Eventos
+            </summary>
+            <returns> Uma lista de eventos</returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Controllers.jogosController.ListarJogos">
+            <summary>
+            Lista todos jogos existente
+            </summary>
+            <returns>Lista de jogos</returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Controllers.jogosController.CadastrarJogo(Exercicios_Inlock_webApi.Domains.jogoDomain)">
+            <summary>
+            Cadastra de jogos
+            </summary>
+            <param name="jogos">Propriedade passada como parametro de cadastro</param>
+            <returns>Jogo cadastrado</returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Controllers.usuariosController.Logiin(Exercicios_Inlock_webApi.Domains.usuarioDomain)">
+            <summary>
+            Realiza o login
+            </summary>
+            <param name="user">é usado para chamar as propriedades da requisição</param>
+            <returns>Retorna um token caso usuario exista</returns>
+        </member>
+        <member name="T:Exercicios_Inlock_webApi.Domains.estudioDomain">
+            <summary>
+            Propriedades da tabela estudio.
+            </summary>
+        </member>
+        <member name="T:Exercicios_Inlock_webApi.Domains.jogoDomain">
+            <summary>
+            Propriedades da tabela jogo
+            </summary>
+        </member>
+        <member name="P:Exercicios_Inlock_webApi.Domains.tipoUsuarioDomain.idTipoUsuario">
+            <summary>
+            Propriedades da tabela TipoUsuario
+            </summary>
+        </member>
+        <member name="P:Exercicios_Inlock_webApi.Domains.usuarioDomain.idUsuario">
+            <summary>
+            Propriedades da tabela Usuario
+            </summary>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Interfaces.IEstudioRepository.ListarEstudios">
+            <summary>
+            Metodo para listar os estudios existentes.
+            </summary>
+            <returns> Lista de estudios </returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Interfaces.IjogoRepository.ListarJogo">
+            <summary>
+            Metodo para listar jogos existentes
+            </summary>
+            <returns> Uma lista de jogos</returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Interfaces.IjogoRepository.CadastrarJogo(Exercicios_Inlock_webApi.Domains.jogoDomain)">
+            <summary>
+            Metodo para cadastrar Jogos
+            </summary>
+            <param name="novoJogo"> Propriedade novoJogo Passado no corpo da requisição </param>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Metodo para fazer login
+            </summary>
+            <param name="email">Propriedade de email passada no corpo da requisição</param>
+            <param name="senha">Propriedade de senha passada no corpo da requisição</param>
+            <returns>Um usuario logado</returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Repositories.estudioRepository.ListarEstudios">
+            <summary>
+            Lista os estudios
+            </summary>
+            <returns> Retorna a lista de estudios </returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Repositories.jogoRepository.CadastrarJogo(Exercicios_Inlock_webApi.Domains.jogoDomain)">
+            <summary>
+            Cadastra novos jogos
+            </summary>
+            <param name="novoJogo">propriedades passada no corpo do requisição</param>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Repositories.jogoRepository.ListarJogo">
+            <summary>
+            Lista os jogos
+            </summary>
+            <returns> Retorna uma lista de jogos </returns>
+        </member>
+        <member name="M:Exercicios_Inlock_webApi.Repositories.usuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Metodo para fazer login
+            </summary>
+            <param name="email">Propriedade de email passada no corpo da requisição</param>
+            <param name="senha">Propriedade de senha passada no corpo da requisição</param>
+            <returns>Um usuario logado</returns>
+        </member>
+    </members>
+</doc>
